@@ -3,6 +3,7 @@ package com.example.tps;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -44,7 +45,8 @@ public class calculateSommeReset extends AppCompatActivity {
         String nameId = getResources().getResourceEntryName(nId);
 
         if((n1.getText().toString().equals("")) || (n2.getText().toString().equals(""))){
-            result.setText("Please enter n1 and n2");
+
+            Toast.makeText(this, "Please enter n1 and n2", Toast.LENGTH_SHORT).show();
         }
         else if(nameId.equals("somme")){
             int rst = Integer.parseInt(n1.getText().toString()) + Integer.parseInt(n2.getText().toString());

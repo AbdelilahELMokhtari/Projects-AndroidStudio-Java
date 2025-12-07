@@ -30,7 +30,7 @@ public class Exercice1 extends AppCompatActivity {
         if(message.isEmpty()){
             Toast.makeText(this, "Please enter your message", Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your message is : \n"+message, Toast.LENGTH_SHORT).show();
         }
 
     }
