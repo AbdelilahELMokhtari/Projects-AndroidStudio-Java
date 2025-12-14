@@ -12,27 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TPs">
         <activity
-            android:name=".Calculator"
+            android:name=".DecisionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AskConfirmation"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Activity1"
+            android:exported="true">
 
         </activity>
+        <activity
+            android:name=".Calculator"
+            android:exported="true" />
         <activity
             android:name=".Exercice1"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".calculateSommeReset"
-            android:exported="true">
-
-
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
