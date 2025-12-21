@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4E8AF"
+    tools:context=".MenuRestaurant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="?android:attr/dividerHorizontal"
+        android:showDividers="middle">
+
+        <!-- Item 1 -->
+        <LinearLayout
+            android:id="@+id/margarita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFF8E1"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:onClick="clickedelement"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+
+                android:src="@drawable/margarita"
+
+                />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="•Margarita 25 dhs (sauce tomate parfumée aux herbes, mozzarella, basilic frais)"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Item 2 -->
+        <LinearLayout
+            android:id="@+id/catania"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFF8E1"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:onClick="clickedelement"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/catania" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="•Catania 45 dhs (sauce tomate parfumée aux herbes, mozzarella, thon, persillade, tomates œuf, câpres, olives, poivrons)"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Item 3 -->
+        <LinearLayout
+            android:id="@+id/legumes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFF8E1"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:onClick="clickedelement"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pizza_legumes_grilles_et_mozzarella" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="•Aux légumes grillés 30 dhs (sauce tomate parfumée aux herbes, mozzarella, aubergines, poivrons à l'huile d'olive, courgettes grillées)"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Item 4 -->
+        <LinearLayout
+            android:id="@+id/tropicale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#FFF8E1"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:onClick="clickedelement"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tropical_pmtr" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="•Tropicale 43 dhs (crème fraîche, ananas, jambon/poulet, raisins)"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,11 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TPs">
         <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".enterProfile"
-            android:exported="true">
+            android:name=".MenuRestaurant"
+            android:exported="true" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
@@ -24,14 +21,22 @@
         </intent-filter>
         </activity>
         <activity
+            android:name=".Exercice_Calculatrice1"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".enterProfile"
+            android:exported="true"></activity>
+        <activity
             android:name=".DecisionActivity"
             android:exported="false" />
         <activity
             android:name=".AskConfirmation"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true" />
         <activity
             android:name=".Calculator"
             android:exported="true" />
