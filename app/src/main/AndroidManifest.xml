@@ -12,22 +12,35 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TPs">
         <activity
-            android:name=".IntentsImplicitesExempel"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:name=".MenuRestaurant_salades"
+            android:exported="false" />
+        <activity
+            android:name=".MenuRestaurant_desserts"
+            android:exported="false" />
+        <activity
+            android:name=".MenuRestaurant_boissons"
+            android:exported="false" />
+        <activity
+            android:name=".MenuRestaurant_sandwichs"
+            android:exported="false" />
+        <activity
+            android:name=".SelectCategorie"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".IntentsImplicitesExempel"
+            android:exported="true" />
         <activity
             android:name=".EchangeDataB"
             android:exported="false" />
         <activity
             android:name=".EchangeDataA"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".show_sended_message"
             android:exported="false" />
@@ -54,7 +67,7 @@
             android:exported="true" />
         <activity
             android:name=".Exercice1"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".calculateSommeReset"
             android:exported="true" />
