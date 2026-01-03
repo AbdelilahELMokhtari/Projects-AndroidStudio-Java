@@ -12,6 +12,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TPs">
         <activity
+            android:name=".tp6travailfaire"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".tp6sql"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".manupilationextern"
+            android:exported="true"></activity>
+        <activity
+            android:name=".tp6manipulationinterne"
+            android:exported="true" />
+        <activity
+            android:name=".tp6Preferencespartagees"
+            android:exported="true" />
+        <activity
+            android:name=".PreferencesPartagees"
+            android:exported="true" />
+        <activity
             android:name=".MenuRestaurant_salades"
             android:exported="false" />
         <activity
@@ -25,13 +51,7 @@
             android:exported="false" />
         <activity
             android:name=".SelectCategorie"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".IntentsImplicitesExempel"
             android:exported="true" />
